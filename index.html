@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Astro v2.5.3">
+    <title>Home Page</title>
+  <link rel="stylesheet" href="/_astro/index.8698c866.css" /><script type="module">function f(){const s=document.getElementById("pop-warn");s.setAttribute("data-popup","show"),setTimeout(()=>{s.setAttribute("data-popup","hide")},1e3)}(function(){function s(r){var e=r.elements,n=Object.keys(e).filter(function(t){return e[t].name!=="honeypot"}).map(function(t){if(e[t].name!==void 0)return e[t].name;if(e[t].length>0)return e[t].item(0).name}).filter(function(t,l,o){return o.indexOf(t)==l&&t}),a={formDataNameOrder:null,formGoogleSheetName:null,formGoogleSendEmail:null};return n.forEach(function(t){var l=e[t];if(a[t]=l.value,l.length){for(var o=[],u=0;u<l.length;u++){var i=l.item(u);(i.checked||i.selected)&&o.push(i.value)}a[t]=o.join(", ")}}),a.formDataNameOrder=JSON.stringify(n),a.formGoogleSheetName=r.dataset.sheet||"Hoja 1",a.formGoogleSendEmail=r.dataset.email||"emiliota95@gmail.com",a}function d(r){r.preventDefault();var e=r.target,n=s(e);if(console.log(n),n.Asistentes==""){f();return}if(n.Familias==""){f();return}m(e);var a=e.action,t=new XMLHttpRequest;t.open("POST",a),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),t.onreadystatechange=function(){if(!(t.responseText!=""&&JSON.parse(t.responseText).result==="error")&&t.status===200){var o=e.querySelector(".sucessMessage");o&&(o.style.visibility="visible",o.style.opacity="1");var u=e.querySelectorAll(".inputContainer input");e.querySelector("textarea"),u.forEach(i=>{i.value=""})}};var l=Object.keys(n).map(function(o){return encodeURIComponent(o)+"="+encodeURIComponent(n[o])}).join("&");t.send(l)}function c(){for(var r=document.querySelectorAll("form.gform"),e=0;e<r.length;e++)r[e].addEventListener("submit",d,!1)}document.addEventListener("DOMContentLoaded",c,!1);function m(r){for(var e=r.querySelectorAll("button"),n=0;n<e.length;n++)e[n].disabled=!0}})();
+</script></head>
+  <body>
+    
+  <div class="background-head">
+    <section class="boundaries">
+      <div class="title-container">
+        <h1>Reunión Familiar 2023</h1>
+        <h3>Invitación</h3>
+      </div>
+    </section>
+  </div>
+  <section class="boundaries form-body">
+    <p>
+      Confirmar la asistencia con los apellidos de la familia y el número de
+      asistentes
+    </p>
+    <form class="form gform astro-YZ5TJX2J" role="form" action="https://script.google.com/macros/s/AKfycbw2sAe9jNnqz-EoWwjHG1l8T63vJ0B_dO0TVE0vcWvqk-K-gnERnIbGP4UkxA0HLLjl/exec" method="POST">
+  <div id="fields" class="astro-YZ5TJX2J">
+    <div class="text-field astro-YZ5TJX2J">
+      <input type="text" name="Familias" placeholder="Apellidos de la familia" class="astro-YZ5TJX2J">
+      <input type="number" name="Asistentes" placeholder="Número de asistentes" class="astro-YZ5TJX2J">
+      <!-- <button id="addfield">+</button> -->
+    </div>
+  </div>
+  <input type="submit" value="Confirmar" id="submitbtn" class="astro-YZ5TJX2J">
+</form>
+<span id="pop-warn" data-popup="hide" class="astro-YZ5TJX2J">Por favor llena el campo vacio</span>
+    <iframe src="https://script.google.com/macros/s/AKfycbw0A8Qxpj49u04adxM5V6EhrtQRsbsUyJsC9mXBnQo1C4cqApzJ7TLjCIhaeSiCOLz7/exec" width="100%" height="fit-content" scrolling="no" style="border: none;" class="astro-3NUEWDAZ"></iframe>
+  </section>
+
+    <!-- your content is injected here -->
+  </body></html>
